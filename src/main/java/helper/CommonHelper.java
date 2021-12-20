@@ -1,6 +1,7 @@
 package helper;
 
 import com.github.webdriverextensions.WebDriverExtensionFieldDecorator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,5 +30,14 @@ public abstract class CommonHelper {
             System.out.println(e);
             return waitUntilElementIsVisible(element);
         }
+    }
+
+    public void pageRefresh(){
+        webDriver.navigate().refresh();
+    }
+
+    public void scrollDown(){
+        JavascriptExecutor js = (JavascriptExecutor) webDriver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
 }

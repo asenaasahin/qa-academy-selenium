@@ -1,0 +1,74 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 453milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 453"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 59051"}
+{"logLevel":"info","message":"Listening on port:59051"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'steps.HomePageSteps.backToTop' and 'steps.HomePageSteps.backToTop'"}
+{"logLevel":"debug","message":"Found Back to top of the page in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.verifyTotalBasketPrice' and 'steps.CartPageSteps.verifyTotalBasketPrice'"}
+{"logLevel":"debug","message":"Found Verify Card Total Price is {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.ProductPageSteps.addFirstItemToBasket' and 'steps.ProductPageSteps.addFirstItemToBasket'"}
+{"logLevel":"debug","message":"Found Add first item to the basket in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.HomePageSteps.verifyHomePage' and 'steps.HomePageSteps.verifyHomePage'"}
+{"logLevel":"debug","message":"Found Verify homepage is displayed in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.verifyCardIsEmpty' and 'steps.CartPageSteps.verifyCardIsEmpty'"}
+{"logLevel":"debug","message":"Found Verify Card is Empty in current project scope."}
+{"logLevel":"debug","message":"Comparing 'utils.Launcher.launchThePage' and 'utils.Launcher.launchThePage'"}
+{"logLevel":"debug","message":"Found Go to the home page in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.HomePageSteps.checkBelowElement' and 'steps.HomePageSteps.checkBelowElement'"}
+{"logLevel":"debug","message":"Found Check the elements which are displayed on the below in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.ProductPageSteps.verifyProductsPage' and 'steps.ProductPageSteps.verifyProductsPage'"}
+{"logLevel":"debug","message":"Found Verify Products page is displayed in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.deleteFirstItem' and 'steps.CartPageSteps.deleteFirstItem'"}
+{"logLevel":"debug","message":"Found First item that added is deleted in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.HomePageSteps.goToShopNow' and 'steps.HomePageSteps.goToShopNow'"}
+{"logLevel":"debug","message":"Found Shop Now button is clicked in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.updateCart' and 'steps.CartPageSteps.updateCart'"}
+{"logLevel":"debug","message":"Found Update Cart button is clicked in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.ProductPageSteps.goToBasket' and 'steps.ProductPageSteps.goToBasket'"}
+{"logLevel":"debug","message":"Found Go to basket in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.refreshBasketPage' and 'steps.CartPageSteps.refreshBasketPage'"}
+{"logLevel":"debug","message":"Found Refresh basket page in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.increaseQuantity' and 'steps.CartPageSteps.increaseQuantity'"}
+{"logLevel":"debug","message":"Found Increase added product quantity to 3 in current project scope."}
+{"logLevel":"debug","message":"Comparing 'steps.CartPageSteps.verifyFirstItemAdded' and 'steps.CartPageSteps.verifyFirstItemAdded'"}
+{"logLevel":"debug","message":"Found Verify {} item is added to the basket in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tAdd first item to the basket : public void addFirstItemToBasket()"}
+{"logLevel":"debug","message":"\tGo to basket : public void goToBasket()"}
+{"logLevel":"debug","message":"\tShop Now button is clicked : public void goToShopNow()"}
+{"logLevel":"debug","message":"\tVerify Products page is displayed : public void verifyProductsPage()"}
+{"logLevel":"debug","message":"\tRefresh basket page : public void refreshBasketPage()"}
+{"logLevel":"debug","message":"\tIncrease added product quantity to 3 : public void increaseQuantity()"}
+{"logLevel":"debug","message":"\tVerify {} item is added to the basket : public void verifyFirstItemAdded(String itemName)"}
+{"logLevel":"debug","message":"\tVerify Card Total Price is {} : public void verifyTotalBasketPrice(String totalPrice) throws InterruptedException"}
+{"logLevel":"debug","message":"\tCheck the elements which are displayed on the below : public void checkBelowElement()"}
+{"logLevel":"debug","message":"\tFirst item that added is deleted : public void deleteFirstItem() throws InterruptedException"}
+{"logLevel":"debug","message":"\tVerify homepage is displayed : public void verifyHomePage()"}
+{"logLevel":"debug","message":"\tBack to top of the page : public void backToTop() throws InterruptedException"}
+{"logLevel":"debug","message":"\tVerify Card is Empty : public void verifyCardIsEmpty()"}
+{"logLevel":"debug","message":"\tGo to the home page : public void launchThePage()"}
+{"logLevel":"debug","message":"\tUpdate Cart button is clicked : public void updateCart()"}
+Ara 20, 2021 10:09:15 ÖS org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 6937
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Ara 20, 2021 10:09:17 ÖS org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Go to the home page' using 'class utils.Launcher.launchThePage"}
+{"logLevel":"debug","message":"Executing 'Verify homepage is displayed' using 'class steps.HomePageSteps.verifyHomePage"}
+{"logLevel":"debug","message":"Executing 'Check the elements which are displayed on the below' using 'class steps.HomePageSteps.checkBelowElement"}
+{"logLevel":"debug","message":"Executing 'Back to top of the page' using 'class steps.HomePageSteps.backToTop"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}
